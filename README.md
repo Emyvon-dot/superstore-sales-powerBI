@@ -11,6 +11,9 @@ customer segments, regional performance and geographical sales distribution.
 The dashboard transforms raw sales data into interactive visual insights that
 can support management in making data-driven business decisions.
 
+![superstore Sales Power BI Dashboard]
+(Screenshots / dashboard.png)
+
 ---
 
 ## 🎯 Business Objective
