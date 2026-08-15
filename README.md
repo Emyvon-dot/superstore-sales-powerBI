@@ -1,258 +1,182 @@
-# Superstore Sales Analysis – Power BI Dashboard
+# 📊 Superstore Sales Analysis – Power BI Dashboard
 
-## 📊 Project Overview
+## 📌 Project Overview
 
-This project presents an interactive Business Intelligence dashboard developed
-using Microsoft Power BI to analyse the Superstore Sales dataset.
+This project presents an interactive **Business Intelligence dashboard developed using Microsoft Power BI** to analyze the Superstore Sales dataset.
 
-The analysis focuses on sales performance, profitability, product categories,
-customer segments, regional performance and geographical sales distribution.
+The analysis focuses on:
 
-The dashboard transforms raw sales data into interactive visual insights that
-can support management in making data-driven business decisions.
+- Sales performance
+- Profitability
+- Product categories
+- Customer segments
+- Regional performance
+- Sales trends over time
+- Geographical sales distribution
 
-![superstore Sales Power BI Dashboard]
-(Screenshots / dashboard.png)
+The dashboard was designed to transform raw sales data into meaningful business insights that can support data-driven decision-making.
 
 ---
 
-## 🎯 Business Objective
+## 🎯 Business Objectives
 
-The main objective of this project is to analyse Superstore sales data and
-identify trends, patterns, business risks and opportunities that can help
-management:
+The project aims to answer key business questions such as:
 
-- Increase sales and profitability
-- Identify high-performing products and categories
-- Understand customer purchasing behaviour
-- Compare regional performance
-- Identify underperforming areas
-- Improve resource allocation
-- Make evidence-based business decisions
+- What is the overall sales and profit performance?
+- Which product categories generate the highest sales?
+- Which customer segments contribute most to revenue?
+- Which regions perform best?
+- How do sales change over time?
+- Which products contribute most to sales?
+- Where are there opportunities to improve profitability?
+
+---
+
+## 📈 Key Performance Indicators
+
+| KPI | Value |
+|---|---:|
+| **Total Sales** | **$2.30M** |
+| **Total Profit** | **$286.40K** |
+| **Average Order Value** | **$229.86** |
+| **Profit Margin** | **12.47%** |
+| **Total Orders** | **5K** |
+
+---
+
+## 📊 Dashboard
+
+![Superstore Sales Dashboard](screenshots/dashboard.png)
+
+The dashboard provides an interactive view of sales performance using KPI cards, charts, filters and visual analysis.
+
+Users can explore the data by:
+
+- Region
+- Category
+- Segment
+- State
+- Product performance
+- Time period
+
+---
+
+## 🔍 Key Business Insights
+
+### 1. Strong overall sales performance
+
+The business generated approximately **$2.30 million in total sales**, indicating a substantial level of revenue across the Superstore dataset.
+
+### 2. Technology is a strong-performing category
+
+Technology is one of the leading product categories by sales. This suggests an opportunity to maintain and potentially expand investment in high-performing technology products.
+
+### 3. Consumer customers are an important revenue segment
+
+The Consumer segment represents a significant portion of sales, highlighting the importance of retaining and growing this customer group.
+
+### 4. Sales performance varies across regions
+
+The dashboard shows differences in sales performance between regions. This creates an opportunity to investigate the factors driving regional differences and develop targeted strategies.
+
+### 5. Sales growth should be considered alongside profitability
+
+Although total sales are approximately **$2.30M**, total profit is approximately **$286.40K**, producing an overall profit margin of **12.47%**.
+
+This indicates that increasing sales alone should not be the only objective; improving profitability should also remain a priority.
+
+---
+
+## ⚠️ Business Risks
+
+- **Profitability risk:** Strong sales may not always translate into proportionally strong profits.
+- **Regional performance differences:** Underperforming regions may reduce overall business growth.
+- **Category dependency:** Heavy reliance on high-performing categories could expose the business to changes in customer demand.
+
+---
+
+## 💡 Business Opportunities
+
+### 1. Expand high-performing categories
+
+Increase focus on products and categories that consistently generate strong sales and profitability.
+
+### 2. Improve regional performance
+
+Investigate lower-performing regions and develop targeted marketing, pricing and product strategies.
+
+### 3. Strengthen customer retention
+
+Develop targeted strategies for high-value customer segments, particularly the Consumer segment.
+
+### 4. Improve profit margins
+
+Analyze discounts, product costs and pricing strategies to identify opportunities to increase profitability.
+
+### 5. Use data-driven decision making
+
+Continue monitoring sales, profit, customer segments and regional performance through interactive dashboards.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- **Microsoft Power BI** – Dashboard development and data visualisation
-- **Power Query** – Data cleaning and transformation
-- **DAX** – Measures and KPI calculations
-- **Excel** – Data preparation and analysis
-- **GitHub** – Project version control and portfolio documentation
+- **Microsoft Power BI**
+- **Power Query**
+- **DAX**
+- **Microsoft Excel**
+- **GitHub**
 
 ---
 
-## 📈 Dashboard KPIs
+## 🔄 Data Analysis Process
 
-The dashboard tracks the following key performance indicators:
-
-| KPI | Purpose |
-|---|---|
-| Total Sales | Measures overall revenue generated |
-| Total Profit | Measures overall profitability |
-| Total Orders | Measures number of orders |
-| Total Quantity | Measures units sold |
-| Average Sales | Measures average sales performance |
-| Profit Margin | Measures profitability relative to sales |
-
----
-
-## 📊 Dashboard Analysis
-
-The dashboard provides interactive analysis of:
-
-- Sales trends over time
-- Sales by product category
-- Profit by sub-category
-- Sales by region
-- Sales by customer segment
-- Sales by state
-- Top 10 products
-- Product and category performance
-- Geographical sales distribution
-
-### Interactive Features
-
-Users can filter the dashboard using:
-
-- State
-- Region
-- Product Category
-- Customer Segment
-
-These filters allow management to drill down into specific areas of the
-business and investigate performance in greater detail.
-
----
-
-# 🔍 Business Insights
-
-## 1. Technology is the strongest-performing category
-
-Technology generated approximately **$836K in sales** and **$145.5K in profit**,
-making it the strongest-performing product category in the analysis.
-
-**Business implication:** Technology represents an important source of both
-revenue and profitability and should remain a key area of investment.
-
----
-
-## 2. Furniture has high sales but low profitability
-
-Furniture generated approximately **$742K in sales**, but its profit was only
-about **$18.5K**.
-
-**Business implication:** Although Furniture has strong sales volume, its low
-profitability suggests that pricing, discounts, product costs or operational
-expenses should be investigated.
-
----
-
-## 3. The West is the strongest sales region
-
-Regional sales performance was approximately:
-
-| Region | Sales |
-|---|---:|
-| West | $0.73M |
-| East | $0.68M |
-| Central | $0.50M |
-| South | $0.39M |
-
-**Business implication:** The West is currently the strongest market, while
-the South represents an opportunity for further growth.
-
----
-
-## 4. Consumer customers generate the largest share of sales
-
-The Consumer segment contributes approximately **$1.16M**, representing about
-**50.56% of total sales**.
-
-**Business implication:** The Consumer segment is critical to the company's
-revenue and should be a major focus of customer retention and marketing
-strategies.
-
----
-
-## 5. Profit is concentrated in selected sub-categories
-
-Some of the strongest profit contributors include:
-
-- Copiers – approximately **$56K**
-- Phones – approximately **$45K**
-- Accessories – approximately **$42K**
-- Paper – approximately **$34K**
-- Binders – approximately **$30K**
-
-**Business implication:** Management should ensure that highly profitable
-sub-categories receive appropriate inventory, marketing and sales attention.
-
----
-
-# ⚠️ Business Risks
-
-## 1. Low Furniture profitability
-
-Furniture generates substantial sales but relatively little profit.
-
-**Risk:** Continued sales growth without improving margins could increase
-revenue without generating proportional increases in profit.
-
----
-
-## 2. Dependence on Consumer customers
-
-Consumers account for approximately **50.56% of total sales**.
-
-**Risk:** Heavy dependence on one customer segment could expose the business to
-changes in consumer demand and purchasing behaviour.
-
----
-
-## 3. Weak South-region performance
-
-The South generates approximately **$0.39M**, considerably below the West's
-approximately **$0.73M**.
-
-**Risk:** Continued underperformance could indicate weak market penetration,
-customer acquisition challenges or competitive pressure.
-
----
-
-# 💡 Business Opportunities
-
-## 1. Expand Technology sales
-
-Technology is the highest-performing category in both sales and profit.
-
-**Opportunity:** Increase investment in high-performing Technology products
-through targeted marketing, product bundles and inventory availability.
-
----
-
-## 2. Improve Furniture margins
-
-Furniture already has strong sales volume.
-
-**Opportunity:** Improving pricing, supplier costs and discount management
-could convert existing sales into significantly higher profits.
-
----
-
-## 3. Develop the South and Central markets
-
-The South and Central regions have lower sales than the West and East.
-
-**Opportunity:** Targeted regional marketing, promotions and improved
-distribution could increase sales in these markets.
-
----
-
-# 📌 Business Recommendations
-
-### 1. Review Furniture pricing and costs
-
-Management should review supplier costs, discounts and pricing for Furniture
-products to improve profit margins.
-
-### 2. Increase investment in Technology
-
-Maintain adequate inventory and increase marketing for high-performing
-Technology products such as Copiers, Phones and Accessories.
-
-### 3. Develop the South region
-
-Conduct further market analysis and introduce targeted promotions to improve
-sales in the South.
-
-### 4. Strengthen Consumer customer retention
-
-Introduce loyalty programmes, personalised promotions and repeat-purchase
-strategies because Consumers generate more than half of total sales.
-
-### 5. Prioritise profitable sub-categories
-
-Management should focus inventory and marketing resources on sub-categories
-that consistently generate strong profits.
-
----
-
-# 📷 Dashboard Preview
-
-The Power BI dashboard screenshots included in this repository demonstrate the
-interactive analysis and visualisations developed for this project.
-
----
-
-# 📁 Project Structure
+The project followed a typical data analytics workflow:
 
 ```text
-superstore-sales-powerbi/
+Raw Dataset
+     ↓
+Data Cleaning & Transformation
+     ↓
+Data Modeling
+     ↓
+DAX Measures
+     ↓
+Data Visualization
+     ↓
+Interactive Dashboard
+     ↓
+Business Insights & Recommendations
+
+📂 Project Structure
+
+superstore-sales-powerBI/
 │
-├── Superstore Sales.pbix
-├── README.md
+├── Superstore Sales Analysis.pbip
 │
-└── Screenshots/
-    ├── dashboard.png
-    └── dashboard2.png
+├── Superstore Sales Analysis.Report/
+│
+├── Superstore Sales Analysis.SemanticModel/
+│
+├── screenshots/
+│ └── dashboard.png
+│
+└── README.md
+
+The repository contains the Power BI Project (PBIP) files, including the report and semantic model.
+
+📌 Key Skills Demonstrated
+Data cleaning and transformation
+Data modeling
+DAX calculations
+KPI development
+Data visualization
+Business intelligence
+Dashboard design
+Business analysis
+GitHub project management
+
+
+👨‍💻 Author
+Emyvon-dot
+Data Analyst | Power BI | Excel | SQL | Python
