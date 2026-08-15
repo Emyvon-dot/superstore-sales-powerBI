@@ -1,0 +1,63 @@
+table DimLocation
+	lineageTag: 62384a50-bcd4-477f-ab1b-226dbd56f36b
+
+	column Country
+		dataType: string
+		lineageTag: e516d7e8-2015-4842-bc54-0154cf66a8e8
+		dataCategory: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 1959ff24-29f8-4be6-b1cd-4f338f545864
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 0a757999-c47f-468f-bcaf-8872bd348256
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: State
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Postal Code'
+		dataType: int64
+		formatString: 0
+		lineageTag: a7b969ec-b2b0-4ac9-8108-e39f5cad5762
+		summarizeBy: none
+		sourceColumn: Postal Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 53ad0151-bff8-46cf-8596-94a8154b0f8f
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimLocation = m
+		mode: import
+		source =
+				let
+				    Source = FactSales,
+				    #"Reordered Columns" = Table.ReorderColumns(Source,{"Customer Name", "Row ID", "Order ID", "Order Date", "Ship Date", "Ship Mode", "Customer ID", "Segment", "Country", "City", "State", "Postal Code", "Region", "Product ID", "Category", "Sub-Category", "Product Name", "Sales", "Quantity", "Discount", "Profit"}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Reordered Columns",{"Row ID", "Order ID", "Order Date", "Ship Date", "Ship Mode", "Customer ID", "Segment", "Product ID", "Category", "Sub-Category", "Product Name", "Sales", "Quantity", "Discount", "Profit", "Customer Name"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Columns", {"Postal Code"})
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,42 @@
+table DimCustomer
+	lineageTag: ed2c4a54-3f03-4009-9900-18a1977c274f
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 7a0bbf38-9e93-4b26-9857-a4b11532346d
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Name'
+		dataType: string
+		lineageTag: baf1ca6b-cac2-4879-b473-c51988e2982c
+		summarizeBy: none
+		sourceColumn: Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: 04243c79-90fc-4a5f-8c00-a77a8f4d0fcf
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCustomer = m
+		mode: import
+		source =
+				let
+				    Source = FactSales,
+				    #"Reordered Columns" = Table.ReorderColumns(Source,{"Customer ID", "Customer Name", "Segment", "Row ID", "Order ID", "Order Date", "Ship Date", "Ship Mode", "Profit", "Discount", "Quantity", "Sales", "Product Name", "Sub-Category", "Category", "Product ID", "Region", "Postal Code", "State", "City", "Country"}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Reordered Columns",{"Row ID", "Order ID", "Order Date", "Ship Date", "Ship Mode", "Profit", "Discount", "Quantity", "Sales", "Product Name", "Sub-Category", "Category", "Product ID", "Region", "Postal Code", "State", "City", "Country"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Columns")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

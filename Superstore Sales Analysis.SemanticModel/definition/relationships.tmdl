@@ -1,0 +1,26 @@
+relationship c76484ef-fd1e-43ac-8f98-5d8a857f90c0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FactSales.'Ship Date'
+	toColumn: LocalDateTable_e2b58480-e389-4092-a2aa-64b9350f71b5.Date
+
+relationship AutoDetected_51f9613a-9f1a-48de-9828-a812ae8d3fe0
+	fromColumn: FactSales.'Customer ID'
+	toColumn: DimCustomer.'Customer ID'
+
+relationship AutoDetected_c8bfaafa-f89e-42c6-a3aa-4aedd437dbbe
+	fromColumn: FactSales.'Product ID'
+	toColumn: DimProduct.'Product ID'
+
+relationship 918ba1b4-59a6-4e34-b34f-da00c60e9e7b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_ce4ffb43-3118-4a66-9806-8283761e8577.Date
+
+relationship f06bb3d5-9eb5-c33e-6f10-dedf5ba73ab2
+	fromColumn: FactSales.'Order Date'
+	toColumn: DimDate.Date
+
+relationship 81dc22c0-df41-6816-0b2a-74a6b1de80e8
+	fromColumn: FactSales.'Postal Code'
+	toColumn: DimLocation.'Postal Code'
+

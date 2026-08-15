@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "e17a88ece4790aab51a7",
+  "position": {
+    "x": 12.947820955913345,
+    "y": 217.95498609120796,
+    "z": 16001,
+    "height": 176.95355306414905,
+    "width": 1538.6327235943691,
+    "tabOrder": 16001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "EXECUTIVE SUMMARY",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Arial, Helvetica, sans-serif",
+                      "fontSize": "20pt",
+                      "color": "#0e1a77"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "The dashboard shows that the business has strong revenue potential, with approximately $2.30 million in total sales and $286.4K in total profit. Technology is the strongest category, the West is the leading region, and Consumers account for more than half of sales. However, the very low profitability of Furniture, the weak performance of the South region, and the company's dependence on the Consumer segment present important risks. Management should therefore focus on improving Furniture margins, expanding Technology sales, strengthening underperforming regions, retaining Consumer customers, and concentrating resources on high-profit sub-categories.",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Arial, Helvetica, sans-serif",
+                      "fontSize": "16pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
